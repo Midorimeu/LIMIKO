@@ -519,7 +519,26 @@ body {
   margin-inline: auto;
 }
 
+@media (max-width: 768px) {
+  .hero .container {
+    display: flex;
+    flex-direction: column-reverse; /* Изменяет порядок отображения элементов */
+    align-items: center;
+  }
 
+  .hero-banner {
+    max-width: 100%; /* Увеличить баннер для лучшего вида */
+    margin-bottom: 20px; /* Добавить немного отступа под изображением */
+  }
+
+  .hero-content {
+    text-align: center; /* Центрирование текста для мобильной версии */
+  }
+
+  .hero-title::after {
+    margin: 0 auto; /* Центрирование линии под заголовком */
+  }
+}
 
 
 
